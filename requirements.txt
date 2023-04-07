@@ -11,4 +11,5 @@ flask_cors
 lime
 tensorflow
 pdf2image
+opencv-python
 -e .
