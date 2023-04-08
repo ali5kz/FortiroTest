@@ -1,6 +1,4 @@
 from flask import Flask, render_template, request,jsonify
-
-
 from pdf2image import convert_from_path,convert_from_bytes
 
 app = Flask(__name__)
