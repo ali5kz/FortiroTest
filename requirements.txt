@@ -1,10 +1,15 @@
 pandas
 numpy
+seaborn
 matplotlib
+scikit-learn
+catboost
+xgboost
 dill
 flask
 flask_cors
 lime
 tensorflow
 pdf2image
+opencv-python
 #-e .
