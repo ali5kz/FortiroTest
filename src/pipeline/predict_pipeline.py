@@ -6,6 +6,7 @@ from src.components.data_loader import load_labels, load_dataThreeChannel,load_d
 from tensorflow.keras.utils import to_categorical
 from PIL import Image
 import numpy as np
+label_list = ['Advertisement', 'Email', 'Form', 'Letter', 'Memo', 'News', 'Note', 'Report', 'Resume', 'Scientific']
 #-----------------------------------------------------------------------------------------------------------------
 def predict(img):
      
@@ -43,5 +44,8 @@ def predict(img):
     label = np.argmax(predictions, axis=1)
     print('Label:', label)
     
-    return str(label[0])
+    index = int(label[0])
+    
+
+    return label_list[index]
 #-----------------------------------------------------------------------------------------------------------------

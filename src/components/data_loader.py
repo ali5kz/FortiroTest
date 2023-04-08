@@ -37,6 +37,7 @@ def load_dataThreeChannel(myDir,img_rows,img_cols):
 def load_dataAndLabels(data_dir,img_rows,img_cols):
     classes = sorted(os.listdir(data_dir)) # list subdirectories as class labels
 
+    print(classes)
     images = []
     labels = []
 

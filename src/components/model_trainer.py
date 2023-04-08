@@ -31,6 +31,10 @@ myDir ="Tobacco"
 #data = load_dataThreeChannel(myDir,img_rows,img_cols)
 data, labels = load_dataAndLabels(myDir,100,100)
 
+print(data)
+print(labels)
+
+
 #Include_top=False, Does not load the last two fully connected layers which act as the classifier.
 #We are just loading the convolutional layers. 
 vgg_conv = VGG16(weights='imagenet',include_top=False,input_shape=(img_rows,img_cols,3))
