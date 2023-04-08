@@ -12,4 +12,5 @@ lime
 tensorflow
 pdf2image
 opencv-python
+gunicorn
 #-e .
