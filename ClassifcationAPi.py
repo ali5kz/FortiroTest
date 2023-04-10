@@ -4,7 +4,7 @@ from src.pipeline.predict_pipeline import predict
 
 app = Flask(__name__)
 
-@app.route('/pdf-to-image', methods=['POST'])
+@app.route('/Document-Classifier', methods=['POST'])
 def pdf_to_image():
     if 'file' not in request.files:
         return jsonify({'error': 'No file part in the request'}), 400
